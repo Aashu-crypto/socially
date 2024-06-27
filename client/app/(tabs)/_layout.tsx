@@ -12,7 +12,7 @@ export default function TabLayout() {
 
   return (
     <Tabs
-      initialRouteName="profile"
+      initialRouteName="feed"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
         headerShown: false,
@@ -32,7 +32,7 @@ export default function TabLayout() {
       x``
       <Tabs.Screen name="index" options={{ href: null }} />
       <Tabs.Screen
-        name="feed/index"
+        name="feed"
         options={{
           title: "",
           tabBarIcon: ({ color, focused }) => (

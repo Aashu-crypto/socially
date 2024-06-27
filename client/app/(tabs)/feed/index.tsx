@@ -1,16 +1,24 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from "react-native";
+import React, { useRef } from "react";
+import HeaderComponent from "@/components/HeaderComponent";
+import Animated from "react-native-reanimated";
 
-type Props = {}
+type Props = {};
 
 const index = (props: Props) => {
+  // const scrollX = useRef(new Animated.value(0)).current
+  const btnOptions = ["Popular", "Trending", "Following"];
+
   return (
-    <View>
-      <Text>feed</Text>
-    </View>
-  )
-}
+    <>
+      <HeaderComponent />
+      <View>
+        <Text>Hey</Text>
+      </View>
+    </>
+  );
+};
 
-export default index
+export default index;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
